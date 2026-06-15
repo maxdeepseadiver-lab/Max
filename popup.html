@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opera GX Music Mod</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 GX Music Mod</h1>
+            <p class="subtitle">Passbeck Pokemon Schwert Soundtrack</p>
+        </div>
+
+        <div class="player-section">
+            <div class="status-display">
+                <span id="statusText">Loading...</span>
+            </div>
+
+            <div class="controls">
+                <button id="playPauseBtn" class="btn btn-primary">
+                    <span class="icon">▶</span>
+                    <span class="text">Play</span>
+                </button>
+                <button id="stopBtn" class="btn btn-secondary">
+                    <span class="icon">⏹</span>
+                    <span class="text">Stop</span>
+                </button>
+            </div>
+
+            <div class="volume-section">
+                <label for="volumeSlider">Volume</label>
+                <input 
+                    type="range" 
+                    id="volumeSlider" 
+                    min="0" 
+                    max="100" 
+                    value="50"
+                    class="volume-slider"
+                >
+                <span id="volumeValue">50%</span>
+            </div>
+
+            <div class="info-section">
+                <p class="info">
+                    🎬 <a href="https://www.youtube.com/watch?v=dKqAL4mZjHA" target="_blank">
+                        View on YouTube
+                    </a>
+                </p>
+                <p class="info">
+                    🔄 Music plays automatically when enabled
+                </p>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <label class="checkbox-label">
+                <input type="checkbox" id="autoPlayCheckbox">
+                <span>Auto-play on browser start</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" id="loopCheckbox" checked>
+                <span>Loop continuously</span>
+            </label>
+        </div>
+
+        <div class="footer">
+            <p>Made for Opera GX 🎮</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
